@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function fetch_data(){
+            var arr = [];
+fetch("https://api.github.com/orgs/Team-Tomato/repos")
+.then(res => res.json())
+.then((output) => {
+   for(var i=0;i<output.length;i++)
+   { 
+       var b = output[i].commits_url;
+       var url = b.substring(0,b.length-6);
+    fetch(url)
+    .then(res => res.json())
+    .then((out)=>{
+        for(var i=0;i<out.length;i++)
+    {
+        for(const [key,val] of Object.entries(out[i].commit.committer))
+        {
+            if(key!="date")
+            {
+                if(!arr.includes(val))
+                {
+            if(val!="GitHub"&&val!="noreply@github.com")
+            {
+                document.write(`${val} `);
+                document.write("<br />")
+            if(!arr.includes(val))
+            { 
+                arr.push(val);
+            }
+            }
+            }
+            }
+        }   
+    }
+    })
+   } 
+})
+.catch(err => { throw err });
+        }
+        </script>
+<body>
+<button type="button" style="background-color:pink;margin-left:auto;margin-right:auto;display:block;margin-top:22%" onclick="fetch_data()">FETCH DATA</button>
+</body>
+</html>
