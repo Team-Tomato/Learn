@@ -1,20 +1,21 @@
 ### How to PR to this repo
-1. Clone this repo from terminal
+1. Fork this repo to your github account by clicking on the fork icon in this repo.
+2. Clone the forked repo from terminal/git bash
 ```
-git clone https://github.com/Team-Tomato/Learn.git
+git clone https://github.com/your github username/Learn.git
 ```
-2. Checkout to new branch
+3. Checkout to new branch
 ```
-git checkout -b your-branch-name
+git checkout -b your-name/your-branch-name
 ```
-3. Create a folder in your name and add files(article) to it
-4. Add and commit the changes
+4. Create a folder in your name and add files(article) to it
+5. Add and commit the changes
 ```
 git add .
 git commit -m "Your message here"
 ```
-5. Push your branch to remote
+6. Push your branch to remote
 ```
-git push origin your-branch-name
+git push origin your-name/your-branch-name
 ```
-6. If link was shown in the last step, click on it and create a PR. Else, open the repo manually in browser and create a PR
+7. If link was shown in the last step, click on it and create a PR. Else, open the repo manually in browser and create a PR
