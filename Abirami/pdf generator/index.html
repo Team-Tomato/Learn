@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> pdf generation </title>
+    </head>
+
+    <!-- importing the pdfmake libraries -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.62/pdfmake.min.js"> </script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.62/vfs_fonts.js"></script>
+    
+    <!-- getting input using one text box and a button that converts text to pdf -->
+
+    <body> 
+       <input id = "text1" placeholder=" Enter your question" > 
+       <br>
+       <button onclick = "fn1()" id="btn1"> Download PDF </button>
+    </body>
+
+   
+    <script>
+         // function that converts the input text to pdf
+
+        function fn1()
+        { 
+           var  str =  document.getElementById("text1").value;
+           //var str1 = document.write(str.bold());
+           //var str2 = document.write(str.italics());
+
+            var docDefinition = {
+                    content : [
+                           str
+                           ],  
+
+                    defaultStyle: {
+                    fontSize: 15,
+                    bold: true
+                             }
+                          }
+    
+    pdfMake.createPdf(docDefinition).download();
+
+        }
+    </script>
+</html>
