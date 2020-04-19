@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Links</title>
+    <link rel="stylesheet" href="https://fonts.googlepis.com/css?family=Open+Sans" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+</head>
+<style>
+    html,
+    body {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 384px;
+    }
+    
+    h1 {
+        font-family: "Menlo", monospace;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+        color: black;
+    }
+    
+    a:link,
+    a:visited {
+        color: aqua;
+        outline: 0;
+        text-decoration: none;
+    }
+    
+    img {
+        width: 30px;
+    }
+    
+    .extension-icon {
+        align-items: center;
+        border-bottom: 0.5px solid #dadada;
+    }
+    
+    .content {
+        padding: 0 22px;
+    }
+    
+    .small-icons {
+        border-top: 0.5px solid #dadada;
+        height: 50px;
+        width: 100%;
+    }
+    
+    .logo {
+        padding: 16px;
+    }
+    
+    .logo-icon {
+        vertical-align: text-bottom;
+        margin-right: 12px;
+    }
+    
+    .version {
+        color: darkolivegreen;
+        font-size: 18px;
+    }
+    
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 22px;
+    }
+    
+    .flex {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        width: 120px;
+    }
+    
+    .flex:hover {
+        opacity: 0.4;
+    }
+    
+    .flex .fa {
+        font-size: 40px;
+        color: brown;
+    }
+</style>
+
+<body>
+    <div class="extension-icon">
+        <h1 class="logo">
+            <img src="download.png" alt="Links" class="logo-icon" />Anna university links
+            <span class="version">(1.0.0)</span>
+        </h1>
+    </div>
+    <div class="content">
+        <p>
+            <b>Easy access to links</b>
+        </p>
+    </div>
+    <div class="small-icons">
+        <div class="flex-container">
+            <div class="flex">
+                <a href="https://acoe.annauniv.edu" target="_blank">
+                    <i class="fa fa-group"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://acoe.annauniv.edu/sems/login/student" target="_blank">
+                    <i class="fa fa-address-book"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://ceghostel.in/" target="_blank">
+                    <i class="fa fa-home"></i>
+                </a>
+            </div>
+            <div class="flex">
+                <a href="https://www.annauniv.edu/" target="_blank">
+                    <i class="fa fa-globe"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
