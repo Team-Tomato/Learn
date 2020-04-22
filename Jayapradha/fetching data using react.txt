@@ -1,0 +1,31 @@
+import React, { Component } from 'react';
+
+class App extends Component {
+    state={ fetch_data: [] }
+
+async componentDidMount()
+{
+const url="http://dummy.restapiexample.com/api/v1/employees"
+const response=await fetch(url);
+const output=await response.json();
+console.log(output);
+this.setState({fetch_data :output.data});
+}
+
+render() {
+return (
+<div>
+    {this.state.fetch_data.map((person,index)=>(
+    <div key={index}>
+         Id: {person.id}<br/>
+             Employee Name: {person.employee_name}<br/>
+             Salary: {person.employee_salary}<br/>
+             Age: {person.employee_age}<br/>
+             <br/>
+        </div>
+        ))}
+</div>
+);
+}
+}
+export default App;
