@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+<script>
+var request = new XMLHttpRequest()
+request.open('GET','https://reqres.in/api/users?page=2',true)
+request.onload = function(){
+var data=JSON.parse(this.response)
+console.log(data)
+}
+request.send()
+</script>
+</body>
+</head>
+</html>
