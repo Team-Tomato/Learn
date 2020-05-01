@@ -1,0 +1,74 @@
+
+.container{
+  width:100%;
+  position: relative;
+  background : #4d08ee;
+  border:1px solid blue;
+  background-image: url(./anna-1.jpg);
+  height:auto;
+ }
+ .grid-color{ 
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.header-color{
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.banner-text{
+  background-color: black;
+  opacity: .8;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+.img
+{ 
+  padding-top: 5em;
+}
+#img{
+  width: 100%;  
+  position: relative; 
+  background-attachment:scroll;
+  background-image:url(./anna-1.jpg) ;
+  background-repeat:no-repeat;
+  background-position-x: center;
+  background-position-y: 45%; 
+  height: 330px;
+
+}
+#font{
+  font-style:italic;
+   color:whitesmoke ;
+}
+
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-style: oblique;
+  color: whitesmoke;
+}
+.slider-container {  position: relative; }
+.slider-container .slider-parent {
+   height: 70vh;
+   max-width: 250px; 
+   width: 100%;    
+   background: #6C7A89;    
+   position: absolute;    
+   left: -250px;    
+   top: 50px;    
+   visibility: hidden;    
+   opacity: 0;    
+   pointer-events: none;    
+   transition: .2s all linear;
+   }
+.slider-container .slider-parent.active {      
+   visibility: visible;      
+   pointer-events: inherit;      
+    transition: .2s all ease-in-out;      
+    opacity: 1;      
+    left: 0; 
+  }
