@@ -1,4 +1,5 @@
 # 2017 - 2022 Batch
+Green tick denotes, we are having that particular question paper. Red mark denotes, we are yet to collect the question paper. If you are having the missed question paper, please get back to us at teamtomato.oss@gmail.com
 
 ## Sem 1
 |Subject | Assess 1 | Assess 2 | Semester |
