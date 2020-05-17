@@ -4,11 +4,11 @@ Green tick denotes, we are having that particular question paper. Red mark denot
 ## Sem 1
 |Subject | Assess 1 | Assess 2 | Semester |
 |--------|:--------:|:--------:|---------:|
-|Com English| :heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |
-|Physics| :heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |
-|Chemistry| :heavy_check_mark:| :heavy_check_mark:| :heavy_check_mark:|
-|M1| :heavy_check_mark:| :heavy_check_mark:| :heavy_check_mark:|
-|FOC| :heavy_check_mark:| :heavy_check_mark:| :heavy_check_mark:|
+|Com English| :heavy_check_mark:|:heavy_check_mark: |:x: |
+|Physics| :heavy_check_mark:|:heavy_check_mark: |:x: |
+|Chemistry| :heavy_check_mark:| :heavy_check_mark:| :x:|
+|M1| :heavy_check_mark:| :heavy_check_mark:| :x:|
+|FOC| :heavy_check_mark:| :heavy_check_mark:| :x:|
 
 ## Sem 2
 |Subject | Assess 1 | Assess 2 | Semester |
@@ -22,18 +22,18 @@ Green tick denotes, we are having that particular question paper. Red mark denot
 ## Sem 3
 |Subject | Assess 1 | Assess 2 | Semester |
 |--------|:--------:|:--------:|---------:|
-|Data Structure|:x:|:x:|:x:|
-|DBMS| :heavy_check_mark:|:heavy_check_mark: |:heavy_check_mark: |
-|Microprocessor| :heavy_check_mark:| :heavy_check_mark:| :heavy_check_mark:|
-|M3| :heavy_check_mark:| :heavy_check_mark:| :heavy_check_mark:|
-|OOPs C++| :x:| :heavy_check_mark:| :heavy_check_mark:|
+|Data Structure|:x:|:x:|:heavy_check_mark:|
+|DBMS| :x:|:x: |:heavy_check_mark: |
+|Microprocessor| :x:| :x:| :heavy_check_mark:|
+|M3| :x:| :x:| :heavy_check_mark:|
+|OOPs C++| :x:| :x:| :heavy_check_mark:|
 
 ## Sem 4
 |Subject | Assess 1 | Assess 2 | Semester |
 |--------|:--------:|:--------:|---------:|
-|CGT| :heavy_check_mark:|:heavy_check_mark: |- |
-|Comp Arch| :heavy_check_mark:|:heavy_check_mark: |- |
-|Java| :heavy_check_mark:| :heavy_check_mark:|- |
-|OS| :heavy_check_mark:| :heavy_check_mark:| - |
-|TOC| :heavy_check_mark:| :heavy_check_mark:|- |
-|Crypto| :heavy_check_mark:| :x:| - |
+|CGT| :x:|- |- |
+|Comp Arch| :x:|- |- |
+|Java| :x:| -|- |
+|OS| :x:| -| - |
+|TOC| :x:|-|- |
+|Crypto| :x:|-| - |
