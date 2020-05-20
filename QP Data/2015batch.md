@@ -22,7 +22,7 @@ Green tick denotes, we are having that particular question paper. Red mark denot
 ## Sem 3
 |Subject | Assess 1 | Assess 2 | Semester |
 |--------|:--------:|:--------:|---------:|
-|Data Structure|:x:|:x:|:heavy_check_mark :|
+|Data Structure|:x:|:x:|:heavy_check_mark:|
 |DBMS| :x:|:heavy_check_mark: |:heavy_check_mark: |
 |Microprocessor| :x:| :x:| :heavy_check_mark:|
 |M3| :heavy_check_mark:| :heavy_check_mark:| :heavy_check_mark:|
@@ -55,7 +55,7 @@ Green tick denotes, we are having that particular question paper. Red mark denot
 |OOAD| :heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
 |Net Mgmt|:x:|:x:|:x:|
 |NP|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-|Elective| :x:|:x:|:x:|
+|Info Sec| :x:|:x:|:x:|
 |EVS| :heavy_check_mark:| :x:| :heavy_check_mark:|
 |CG| :x:| :x:| :heavy_check_mark:|
 
