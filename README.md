@@ -9,6 +9,7 @@ git clone https://github.com/your github username/Learn.git
 git checkout -b your-name/your-branch-name
 ```
 4. If you are a first year and learning Python, then go to [Juniors - 1st Year] folder and Create a folder in your name and add files(article) to it. 
+
 If you are not a first year, Create a folder(in the root) in your name and add files(article) to it
 5. Add and commit the changes
 ```
