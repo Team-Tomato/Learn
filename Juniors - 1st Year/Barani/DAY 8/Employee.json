@@ -1,0 +1,45 @@
+{
+      "employee": [
+            {
+                  "id": 10,
+                  "Name": "Deepak",
+                  "Position": "CEO",
+                  "Email": "deepak@gmail.com",
+                  "Contact": "9876543210",
+                  "Salary": "1500000"
+            },
+            {
+                  "id": 11,
+                  "Name": "Gautam",
+                  "Positon": "MD",
+                  "Email": "gautam@gmail.com",
+                  "Contact": "9638527410",
+                  "Salary": "1300000"
+            },
+            {
+                  "id": 12,
+                  "Name": "Praveen",
+                  "Position": "Asst.Manager",
+                  "Email": "praveen@gmail.com",
+                  "Contact": "93827146560",
+                  "Salary": "1200000"
+            },
+            {
+                  "id": 13,
+                  "Name": "Madhavan",
+                  "Positon": "MD",
+                  "Email": "madhavan@yahoo.com",
+                  "Contact": "8975642310",
+                  "Salary": "1100000",
+                  "Position": "TL"
+            },
+            {
+                  "id": 14,
+                  "Name": "Ravi",
+                  "Position": "TL",
+                  "Email": "ravi@gmail.com",
+                  "Contact": "8795462130",
+                  "Salary": "1100000"
+            }
+      ]
+}
