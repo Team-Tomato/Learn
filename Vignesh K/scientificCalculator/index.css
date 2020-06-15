@@ -1,0 +1,37 @@
+body{
+    align-items: center;
+  background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+  justify-content: center;
+}
+
+.title { 
+    margin-bottom: 10px; 
+    padding: 5px 0; 
+    font-size: 20px; 
+    font-weight:bold; 
+    text-align:center; 
+    width: 412px; 
+    color:green; 
+    border: solid black 2px; 
+} 
+
+/* Set the button style */ 
+#btn { 
+    width: 98%; 
+    height: 40px; 
+    font-size: 30px; 
+} 
+
+input[type="button"] { 
+    background-color:#dc7bc5; 
+    color: black; 
+    border: solid black 2px; 
+    width:100% 
+} 
+
+/* Set input textarea */ 
+input[type="text"] { 
+    background-color:white; 
+    border: solid black 2px; 
+    width:100% 
+} 
