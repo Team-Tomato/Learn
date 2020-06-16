@@ -14,7 +14,7 @@ end
 staff_data = Staff.new()
 staffs = staff_data.posts
 CSV.open("staffData.csv", "wb") do |csv| 
-	csv << ["id", "shortForm", "staff", "subjectName", "url", "year"]
+	csv << staffs[0].keys
 	for staf in staffs
 		id = staf['id']
 		shortForm = staf['shortForm']
