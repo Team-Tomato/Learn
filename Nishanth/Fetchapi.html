@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>News Api</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #e0dede;
+    }
+
+    .container {
+      margin-top: 20px;
+      width: 75%;
+    }
+
+    .title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .single-news {
+      padding: 30px;
+      background-color: #ececec;
+      margin-top: 20px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .img {
+      width: 100%;
+    }
+
+    .topic {
+      padding: 20px;
+
+    }
+
+    .error {
+      color: red;
+      text-align: center;
+    }
+
+    .search {
+      align-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .heading {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <div class="topic">
+        <h1>News API</h1>
+      </div>
+      <div class="search">
+        Search News by topic : <input class="input" placeholder="Search News" name="text" type="text">
+        <button type="button" class="btn btn-secondary btn-sm" onclick="getData()">Get News</button>
+      </div>
+    </div>
+    <hr size="8px" noshade>
+    <div class="news-container">
+
+    </div>
+
+  </div>
+  <script type="text/javascript">
+    const input = document.querySelector('.input');
+    const container = document.querySelector('.container');
+    const newscontainer = document.querySelector('.news-container');
+
+    function getData() {
+      const apiKey = 'a67eef8277874660b267055a074d0de8';
+      let topic = input.value;
+      let url = 'http://newsapi.org/v2/everything?q=' + topic + '&apiKey=' + apiKey;
+      fetch(url)
+        .then((response) => {
+          return response.json()
+        })
+        .then((parsedData) => {
+          newscontainer.innerHTML = '';
+          console.log(parsedData);
+          if (parsedData.totalResults == 0) {
+            let error = document.createElement("h3");
+            error.innerHTML = '';
+            error.classList.add("error");
+            error.innerHTML = "Sorry,There is no news about " + topic + ".....!";
+            container.appendChild(error)
+          } else {
+            parsedData.articles.forEach(article => {
+
+              var listwrapper = document.createElement('div');
+              listwrapper.classList.add('list-wrapper');
+              var news = document.createElement('div');
+              news.classList.add('single-news');
+              news.classList.add('shadow');
+              news.classList.add('row');
+              var imageTag = document.createElement('div');
+              imageTag.classList.add('col-4')
+              var content = document.createElement('div');
+              content.classList.add('col-8');
+              var image = document.createElement('img');
+              image.style.width = "100%";
+              image.style.float = "left";
+              image.setAttribute('src', article.urlToImage);
+              var heading = document.createElement('h2');
+              heading.innerHTML = article.title;
+              heading.setAttribute('href', article.url);
+              var description = document.createElement('p');
+              description.innerHTML = article.description;
+              var source = document.createElement('small');
+              source.innerHTML = article.source.name;
+              var readmore = document.createElement('a');
+              readmore.classList.add('btn');
+              readmore.classList.add('btn-sm');
+              readmore.classList.add('btn-secondary');
+              readmore.setAttribute('href', article.url)
+              readmore.innerHTML = "Read More>>";
+              readmore.target = "-_blank";
+              readmore.style.float = "right";
+              imageTag.appendChild(image);
+              content.appendChild(heading);
+              content.appendChild(source);
+              content.appendChild(description);
+              content.appendChild(readmore);
+              news.appendChild(imageTag);
+              news.appendChild(content);
+              newscontainer.appendChild(news);
+            });
+          }
+        })
+        .catch((err) => {
+          alert(err + " Oops something went wrong..!");
+        })
+
+    }
+  </script>
+</body>
+
+</html>
