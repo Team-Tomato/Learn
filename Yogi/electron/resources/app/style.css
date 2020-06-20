@@ -1,0 +1,90 @@
+html,body{
+    width: 500px;
+    height: 320px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}#container{
+    background-color: #ffcef0;
+    width: 500px;
+    height: 320px;
+    position: absolute;
+}
+.screen{
+    background-color: #f7f7f7;
+    width: 435px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    left: 31px;
+}
+.screen input{
+    position: relative;
+    left: 2px;
+    top: 2px;
+    height: 40px;
+    width: 423px;
+    color: black;
+    background-color: #bdbdbb;
+    font-size: 25px;
+    text-align: right;
+}
+.btns{
+    position: relative;
+    top: 10px;
+    left: 22px;
+}
+.button{
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+p{
+    line-height: 20px;
+}
+.button.black{
+    color: white;
+    background-color: black;
+    border-bottom: 2px solid #647489;
+    border-top: 2px black;
+}
+.button.white{
+    color: black;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+.button.white1{
+    color: transparent;
+    background-color: transparent;
+    border-bottom: transparent;
+}
+.button.green{
+    color: white;
+    background-color: green;
+    border-bottom: 2px solid black;
+}
+.button.red{
+    color: white;
+    background-color: red;
+    border-bottom: 2px solid black;
+}
+.equalto{
+    position: absolute;
+  left: 205px;
+  top: 170px;
+}
+.footerText{
+    position: absolute;
+    top: 205px;
+    left: 300px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+#myAns,#myPara{
+    display: none;
+}

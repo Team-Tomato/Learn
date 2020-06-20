@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TT Calc</title>
+    <link rel="stylesheet" type="text/css "href="style.css">
+  </head>
+  <script src="script.js"></script>
+  <body>
+    <div id="container">
+      <div class="screen"><form name="calc">
+        <p id=myPara></p>
+        <p id=myAns>0</p>
+        <input name="display" type="text" id="result" size="20" readonly maxlength="50"></form>
+      </div>
+      <div class="btns">
+        <p>
+          <input type="button" value="(" class="button black" onclick="leftParen()">
+          <input type="button" value=")" class="button black" onclick="input(')')">
+          <input type="button" value="C"class="button red" onclick="c()">
+          <input type="button" value="CE" class="button red" onclick="ce()">
+          <input type="button" value="&#x232b" class="button red" onclick="del()">
+          <input type="button" value="%" class="button black" onclick="percent()">
+          <input type="button" value="!" class="button black" onclick="input('!')">          
+        </p>
+        <p>
+          <input type="button" value="^" class="button black" onclick="input('^(')">
+          <input type="button" value="sin" class="button black" onclick="trigo('sin')">
+          <input type="button" value="7" class="button white" onclick="input('7')">
+          <input type="button" value="8" class="button white" onclick="input('8')">
+          <input type="button" value="9" class="button white" onclick="input('9')">
+          <input type="button" value="&#x00F7" class="button black" onclick="multOrDiv('div')"                                                                                                                                                                                                                                                                              >
+          <input type="button" value="ln" class="button black" onclick="ln()">          
+        </p>
+        <p>
+          <input type="button" value="xⁿ" class="button black" onclick="input('^(')">
+          <input type="button" value="cos" class="button black" onclick="trigo('cos')">
+          <input type="button" value="4" class="button white" onclick="input('4')">
+          <input type="button" value="5" class="button white" onclick="input('5')">
+          <input type="button" value="6" class="button white" onclick="input('6')">
+          <input type="button" value="&#x00D7;" class="button black" onclick="multOrDiv('mult')">
+          <input type="button" value="log"class="button black" onclick="log()">          
+        </p>
+        <p>
+          <input type="button" value="e" class="button black" onclick="e()">
+          <input type="button" value="tan" class="button black" onclick="trigo('cos')">
+          <input type="button" value="1" class="button white" onclick="input('1')">
+          <input type="button" value="2" class="button white" onclick="input('2')">
+          <input type="button" value="3" class="button white" onclick="input('3')">
+          <input type="button" value="-" class="button black" onclick="input('-')">
+          <input type="button" value="√" class="button black" onclick="sqrt()">          
+        </p>  
+        <p>
+          <input type="button" value="EXP" class="button black" onclick="expon()">
+          <input type="button" value="π" class="button black" onclick="pi()">
+          <input type="button" value="0" class="button white" onclick="input('0')">
+          <input type="button" value="=" class="button white1">
+          <input type="button" value="." class="button white" onclick="input('.')">
+          <input type="button" value="+" class="button black" onclick="input('+')">
+          <input type="button" value="Ans" class="button green" onclick="ans()">          
+        </p>
+        <input type="image" src="equalto.png" class="equalto" onclick="equal()">
+        <div class="footerConfig"><h6 class="footerText">Made with ❤ by TeamTomato | 2020</h6></div> 
+      </div>
+    </div>
+  </body>
+</html>
