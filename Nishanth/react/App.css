@@ -1,0 +1,52 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*{
+    font-family: sans-serif;
+}
+.Navigation{
+    background-color: antiquewhite;
+}
+.Heading{
+    font-weight: bold;
+    font-size: 35px;
+}
+.text{
+    outline: none;
+    border: none;
+    border-bottom:1px solid;
+    border-radius: 0;
+    background:transparent;
+    font-size: 18px;
+}
+.submit{
+    border-radius:10px;
+    background: none;
+    color: black;
+}
+.Contents{
+    margin-top: 20px;
+    width: 75%;
+    margin: auto;
+}
+.image{
+    width:100%;
+    height: auto;
+}
+.search{
+    float: right;
+}
+.row{
+    padding: 30px;
+    background-color: #ececec;
+    margin-top: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.form{
+    text-align: center;
+    align-content: center;
+}
+.input{
+    padding:0px 20px 0px;
+    border: none;
+    border-bottom: 1px solid #390843;
+}
