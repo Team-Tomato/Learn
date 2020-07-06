@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+
+    <style>
+        .newsList {
+            padding: 30px;
+        }
+        
+        .newsList div {
+            padding-bottom: 20px;
+            font-size: 20px;
+            margin: 20px;
+        }
+        
+        .newsList a {
+            font-size: 35px;
+        }
+        
+        .newsList p {
+            font-size: 25px;
+            margin: 20px;
+        }
+        
+        .search {
+            text-align: center;
+        }
+        
+        .heading {
+            padding: 30px;
+            text-align: center;
+            background-color: aqua;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="heading">News API</h1><br />
+    <div>
+        <form class="search">
+
+            <label>Search for topic:</label>
+            <input class="input" type="text"><br /><br />
+            <input type="submit" value="Get Info..">
+
+        </form>
+    </div>
+    <div class="container">
+
+        <ul class="newsList"></ul>
+
+    </div>
+
+    <script>
+        const searchFrom = document.querySelector('.search');
+        const input = document.querySelector('.input');
+        const newsList = document.querySelector('.newsList');
+
+        searchFrom.addEventListener('submit', (e) => {
+
+            e.preventDefault();
+            newsList.innerHTML = ''
+            const apiKey = 'a67eef8277874660b267055a074d0de8';
+            let topic = input.value;
+            let url = 'http://newsapi.org/v2/everything?q=' + topic + '&apiKey=' + apiKey;
+
+            fetch(url)
+                .then((response) => {
+
+                    return response.json()
+                })
+                .then((parsedData) => {
+                    console.log(parsedData);
+                    parsedData.articles.forEach(article => {
+
+                        let li = document.createElement('li');
+                        let newsTitle = document.createElement('a');
+                        let newsDescription = document.createElement('p');
+                        let newsSource = document.createElement('div');
+                        newsTitle.setAttribute('href', article.url);
+                        newsTitle.setAttribute('target', '_blank');
+                        newsTitle.textContent = article.title;
+                        newsDescription.textContent = "Description: " + article.description;
+                        newsSource.textContent = "Source: " + article.source.name;
+                        li.appendChild(newsTitle);
+                        newsList.appendChild(li);
+                        newsList.appendChild(newsDescription);
+                        newsList.appendChild(newsSource);
+
+
+                    });
+                })
+                .catch((err) => {
+                    alert(err + " Oops something went wrong..!");
+                })
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.rect{
+  shape-rendering: crispEdges;
+}
+
+.bar-label{
+  fill: #000;
+  text-anchor: middle;
+  font-size: 18px;
+}
+
+.axis path,
+.axis line{
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
