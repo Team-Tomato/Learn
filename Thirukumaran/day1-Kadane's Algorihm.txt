@@ -1,0 +1,29 @@
+class kadane{ 
+  
+    static void kadanealgo(int arry[]) 
+    { 
+       int maxnow = 0, 
+        int maxever = 0; 
+  
+        for (int i = 0; i<arry.length; i++)  
+        { 
+            maxnow += arry[i]; 
+  		if (maxever< maxnow)  
+            { 
+              maxever= maxnow; 
+            } 
+  
+            if (maxnow < 0)  
+            { 
+                maxnow = 0; 
+            } 
+        } 
+        System.out.println("largest subarry value =  " 
+                           + maxever); 
+    } 
+    public static void main(String[] args) 
+    { 
+        int arry[] = {5,7,-3,4,-8,-1,0,3,9,4,-1}; 
+        kadanealgo(arry); 
+    } 
+} 
