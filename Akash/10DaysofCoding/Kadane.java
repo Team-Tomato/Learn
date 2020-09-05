@@ -11,7 +11,7 @@ public class Kadane {
 		{
 			a[i] = scan.nextInt();
 		}
-		int meh = 0, msf = 0;
+		int meh = 0, msf = Integer.MIN_VALUE;
 		for(int i = 0;i<n;i++)
 		{
 			meh = meh + a[i];
