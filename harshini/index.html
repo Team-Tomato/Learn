@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+	<table class="table table-stripped">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Short form</th>
+				<th>Staff</th>
+				<th>Subject</th>
+
+			</tr>
+		</thead>
+		<tbody id="data"></tbody>
+	</table>
+</div>
+	
+	<script type="text/javascript">
+		fetch("https://teamtomato.herokuapp.com/api/v1/question").then(
+			res=>{
+				res.json().then(
+					data=>{
+						console.log(data);
+						if(data.length > 0){
+							var temp = "";
+
+							data.forEach((u)=>{
+								temp +="<tr>";
+								temp +="<td>" + u.id + "</td>";
+								temp +="<td>" + u.shortForm + "</td>";
+								temp +="<td>" + u.staff + "</td>";
+								temp +="<td>" + u.subjectName + "</td></tr>";
+
+							})
+
+							document.getElementById("data").innerHTML = temp;
+						}
+					})
+			})
+	</script>
+</body>
