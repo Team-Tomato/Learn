@@ -6,44 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Question Paper Search</title>
 
-
     <style>
-        .subjectList li {
-            list-style-type: none;
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
         }
         
-        .subjectList {
-            padding: 10px;
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        h1 {
             text-align: center;
-        }
-        
-        .subjectList p {
-            margin: 0;
-        }
-        
-        .subjectList div {
-            padding-bottom: 10px;
-            font-size: 15px;
-        }
-        
-        .subjectList a {
-            font-size: 35px;
-        }
-        
-        .subjectList p {
-            font-size: 20px;
-        }
-        
-        .search {
-            text-align: center;
-            font-size: 20px;
-        }
-        
-        .heading {
-            padding: 30px;
-            text-align: center;
-            background-color: #adacbd;
-            margin: 0;
         }
     </style>
 
@@ -51,69 +34,44 @@
 
 <body>
     <h1 class="heading">Question-Paper Search</h1><br />
-    <div>
-        <form class="search">
-
-            <label>Search by Year, Staff name, Short form(in upper case):</label><br /><br />
-            <input class="input" type="text"><br /><br />
-            <input type="submit" value="Get Info..">
-            <hr />
-
-        </form>
-    </div>
-    <div class="container">
-
-        <ul class="subjectList"></ul>
-
+    <div class=table>
+        <table style=width:100%>
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Staff Name</th>
+                    <th>Year</th>
+                    <th>Question Paper</th>
+                </tr>
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
     </div>
 
     <script>
-        const searchFrom = document.querySelector('.search');
-        const input = document.querySelector('.input');
-        const subjectList = document.querySelector('.subjectList');
+        let url = 'https://teamtomato.herokuapp.com/api/v1/question';
+        fetch(url)
+            .then((response) => {
 
-        searchFrom.addEventListener('submit', (e) => {
+                return response.json()
 
-            e.preventDefault();
-            subjectList.innerHTML = ''
-
-            let topic = input.value;
-            let url = 'https://teamtomato.herokuapp.com/api/v1/question';
-
-            fetch(url)
-                .then((response) => {
-
-                    return response.json()
-
-                })
-                .then((parsedData) => {
-                    console.log(parsedData);
-                    parsedData.forEach(article => {
-                        if (topic == article.shortForm || topic == article.staffName || topic == article.year) {
-                            let li = document.createElement('li');
-                            let subjectTitle = document.createElement('a');
-                            let staffName = document.createElement('p');
-                            let year = document.createElement('div');
-                            subjectTitle.setAttribute('href', article.url);
-                            subjectTitle.setAttribute('target', '_blank');
-                            subjectTitle.textContent = article.subjectName;
-                            staffName.textContent = "Staff Name: " + article.staff;
-                            year.textContent = "Year: " + article.year;
-                            li.appendChild(subjectTitle);
-                            subjectList.appendChild(li);
-                            subjectList.appendChild(staffName);
-                            subjectList.appendChild(year);
-                        }
-
-                    });
-
-                })
-
-            .catch((err) => {
-                alert(err + " Oops something went wrong..!");
             })
-
-        });
+            .then((parsedData) => {
+                console.log(parsedData);
+                if (parsedData.length > 0) {
+                    var temp = "";
+                    parsedData.forEach(element => {
+                        temp += "<tr>";
+                        temp += "<td>" + element.subjectName + "</td>";
+                        temp += "<td>" + element.staff + "</td>";
+                        temp += "<td>" + element.year + "</td>";
+                        temp += "<td><a href=" + element.url + ">Download</a></td>";
+                    });
+                    document.getElementById("data").innerHTML = temp;
+                } else {
+                    console.log("Something went wrong!!");
+                }
+            });
     </script>
 </body>
 
