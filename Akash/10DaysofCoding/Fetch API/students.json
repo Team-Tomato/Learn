@@ -1,0 +1,29 @@
+{
+    "list":[
+    {
+        "name":"Karthi",
+        "rollno":"104",
+        "semester":"4",
+        "cgpa":"6.3"
+
+    },
+    {
+        "name":"Saran",
+        "rollno":"132",
+        "semester":"6",
+        "cgpa":"7.3"
+    },
+    {
+        "name":"Ramya",
+        "rollno":"125",
+        "semester":"4",
+        "cgpa":"9.2"
+    },
+    {
+        "name":"Hari",
+        "rollno":"112",
+        "semester":"8",
+        "cgpa":"7.9"
+    }
+    ]
+}
