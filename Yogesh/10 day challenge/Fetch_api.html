@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Paper Search</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="heading">Question-Paper Search</h1><br />
+    <div class=table>
+        <table style=width:100%>
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Staff Name</th>
+                    <th>Year</th>
+                    <th>Question Paper</th>
+                </tr>
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
+    </div>
+
+    <script>
+        let url = 'https://teamtomato.herokuapp.com/api/v1/question';
+        fetch(url)
+            .then((response) => {
+
+                return response.json()
+
+            })
+            .then((parsedData) => {
+                console.log(parsedData);
+                if (parsedData.length > 0) {
+                    var temp = "";
+                    parsedData.forEach(element => {
+                        temp += "<tr>";
+                        temp += "<td>" + element.subjectName + "</td>";
+                        temp += "<td>" + element.staff + "</td>";
+                        temp += "<td>" + element.year + "</td>";
+                        temp += "<td><a href=" + element.url + ">Download</a></td>";
+                    });
+                    document.getElementById("data").innerHTML = temp;
+                } else {
+                    console.log("Something went wrong!!");
+                }
+            });
+    </script>
+</body>
+
+</html>
