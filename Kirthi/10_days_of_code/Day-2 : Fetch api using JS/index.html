@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fetch api using JS</title>
+    </head>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        table, td, th {
+          text-align: left;
+        }
+        th, td {
+          padding: 15px;
+        }
+        tr:nth-child(even){background-color: white}
+        
+        th {
+          background-color: palevioletred;
+          color: white;
+        }
+        </style>
+    <body>
+        <p id="demo"></p>
+        div class="cotainer">
+        <table class ="table table-stripped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>SHORTFORM</th>
+                    <th>STAFF</th>
+                    <th>SUBJECTNAME</th>
+                    <th>URL</th>
+                    <th>YEAR</th>
+                </tr>
+            </thead>
+            <tbody id= "data"></tbody>
+  </table>
+        <script>
+            const api_url=' https://teamtomato.herokuapp.com/api/v1/question';
+            async function getData(){
+                const response = await fetch(api_url);
+                const data = await response.json();
+                console.log(data);
+                if(data.length > 0){
+                    var temp="";
+                    data.forEach((u)=>{
+                        temp+="<tr>";
+                        temp+="<td>"+u.id+"</td>";
+                        temp+="<td>"+u.shortForm+"</td>";
+                        temp+="<td>"+u.staff+"</td>";
+                        temp+="<td>"+u.subjectName+"</td>";
+                        temp+="<td>"+u.url+"</td>";
+                        temp+="<td>"+u.year+"</td></tr>";
+                        })
+                        document.getElementById("data").innerHTML= temp;
+  }
+}
+getData();
+        </script>
+    </body>
+</html>
