@@ -42,26 +42,22 @@ class FormDetail extends Component {
             <Form onSubmit= {this.handleSubmit}>
                 <FormGroup>
                     <Label for = "name">Name</Label>
-                        <Input id="name" value={data.name} invalid={false} name="name" onChange={this.handleChange}></Input>
-                    <FormFeedback>Please Fill this out  </FormFeedback>
+                        <Input id="name" value={data.name} placeholder="Enter your Name" name="name" onChange={this.handleChange}></Input>
                 </FormGroup>
 
                 <FormGroup>
                     <Label for = "number">Register Number</Label>
-                    <Input id="number" type="number" value={data.number} invalid={false} name="number" onChange={this.handleChange}></Input>
-                    <FormFeedback>Enter valid Number </FormFeedback>
+                    <Input id="number" type="number" value={data.number} placeholder="Enter valid Number" name="number" onChange={this.handleChange}></Input>
                 </FormGroup>
 
                 <FormGroup>
                     <Label for = "dept">Department</Label>
-                    <Input id="dept" invalid={false} name="dept"value={data.dept} onChange={this.handleChange}></Input>
-                    <FormFeedback>Please Fill this out  </FormFeedback>
+                    <Input id="dept" name="dept"value={data.dept}placeholder="Deparment ID" onChange={this.handleChange}></Input>
                 </FormGroup>
 
                 <FormGroup>
                     <Label for = "sem">Semester</Label>
-                    <Input id="sem" type ="number" invalid={false} name="sem" value={data.sem} onChange={this.handleChange} ></Input>
-                    <FormFeedback>Enter valid number  </FormFeedback>
+                    <Input id="sem" type ="number" placeholder="Enter Number" name="sem" value={data.sem} onChange={this.handleChange} ></Input>
                 </FormGroup>
 
                 <Button color ="danger">
