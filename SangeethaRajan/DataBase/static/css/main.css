@@ -1,0 +1,42 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    margin: 0 auto;form
+    width: 400px;
+}
+
+table, td, th {
+    border: 1px solid #aaa;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 30px;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.form {
+  width: 500px;
+  clear: both;
+  margin: auto;
+}
+
+.form input {
+  width: 100%;
+  clear: both;
+
+}
+#content {
+    width: 70%;
+}

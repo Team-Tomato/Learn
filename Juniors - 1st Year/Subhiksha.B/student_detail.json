@@ -1,0 +1,34 @@
+{
+    "student_Id": [
+        {
+            "Roll_no": 1,
+            "Name": "Ravi",
+            "Class": "Tenth",
+            "School": "Sun School"
+        },
+        {
+            "Roll_no": 2,
+            "Name": "Shalini",
+            "Class": "Tenth",
+            "School": "sunbeam school"
+        },
+        {
+            "Roll_no": 3,
+            "Name": "Seema",
+            "Class": "Tenth",
+            "School": "Best school"
+        },
+        {
+            "Roll_no": 4,
+            "Name": "Ishaan",
+            "Class": "Tenth",
+            "School": "St.Mary's school"
+        },
+        {
+            "Roll_no": 6,
+            "Name": "Anu",
+            "Class": "Tenth",
+            "School": "Sunshine School"
+        }
+    ]
+}

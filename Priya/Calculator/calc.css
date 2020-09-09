@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#btn{ 
+   width: 100%; 
+   height: 40px; 
+   font-size: 30px; 
+} 
+          
+input[type="button"] {  
+     background-color: darkcyan;
+     color:white;  
+     border: solid black 2px;  
+     width:100%;
+     font-size : 12px;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}  
+
+input[type="button"]:hover{
+    background-color:grey;
+
+}
+          
+        
+input[type="text"] {   
+    background-color: whitesmoke;
+    border: solid black 2px; 
+    color:black; 
+    width:100%; 
+     
+} 
+ 
+input[value="Del"]
+{
+    background-color:crimson;
+}
+
+input[value="AC"]
+{
+    background-color:crimson;
+    
+}
+
+input[value="="]
+{
+    background-color: darkgreen;
+
+}
+
+

@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.marker {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.marker img {
+    width: 20px;
+    height: 20px;
+}
+
+.popupmenu {
+    font-family: "Lucida Console", Courier, monospace;
+    max-width: 500px;
+    height: 370px;
+    background-color: whitesmoke;
+}
+
+.popupmenu p b {
+    font-family: "Lucida Console", Courier, monospace;
+}

@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>DB</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">DB_Flask_Task</h1>
+    {% if contacts|length < 1 %}
+    <h4 style="text-align: center">There are no details. Create one below!</h4>
+    {% else %}
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone No</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Pincode</th>
+        </tr>
+        {% for contact in contacts %}
+            <tr>
+                <td>{{ contact.Username }}</td>
+                <td>{{ contact.Phone_no }}</td>
+                <td>{{ contact.Email }}</td>
+                <td>{{ contact.City }}</td>
+                <td>{{ contact.State }}</td>
+                <td>{{ contact.Pincode }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+
+    <div class="form">
+        <form action="/" method="POST">
+            <label for="Username">Username</label><br />
+            <input type="text" name="Username" id="Username"><br />
+            <label for="Phone_no">Phone Number</label><br />
+            <input type="text" name="Phone_no" id="Phone_no"><br />
+            <label for="Email">Email</label><br />
+            <input type="text" name="Email" id="Email"><br />
+            <label for="City">City</label><br />
+            <input type="text" name="City" id="City"><br />
+            <label for="State">State</label><br />
+            <input type="text" name="State" id="State"><br />
+            <label for="Pincode">Pincode</label><br />
+            <input type="text" name="Pincode" id="Pincode"><br />
+            <input type="submit" value="Add details">
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{
+  "name": "scientificcalculator",
+  "version": "1.0.0",
+  "description": "A calculator doing all scientific calculations",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Vignesh Karthigeyan",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.3"
+  }
+}

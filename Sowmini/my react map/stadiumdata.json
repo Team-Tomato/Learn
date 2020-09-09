@@ -1,0 +1,283 @@
+{
+    "features": [{
+      "properties": {
+        "ID": 1,
+        "NAME": "Mahatma Gandhi Stadium",
+        "DESCRIPTION": "The stadium has hosted seven first-class matches from 1973 when Tamil Nadu cricket team played against Kerala cricket team. The ground hosted its last first-class matches in 1992 when Tamil Nadu cricket team played against Andhra cricket team. ",
+        "ADDRESS": "Omalur Main Rd, Sankar Nagar, Salem, Tamil Nadu-636007",
+        "MOBILE_NO": "04272412717",
+        "ESTABLISHMENT": 1972,
+        "RATINGS": 4.1,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [12.988668,80.226555]
+      }
+    }, {
+      "properties": {
+        "ID": 2,
+        "NAME": "Salem Green Valley Cricket Ground",
+        "DESCRIPTION": "Excellent facility for youngsters to learn cricket and also get match practice.",
+        "ADDRESS": "Kandhasramam, Salem, Tamil Nadu - 636015",
+        "MOBILE_NO": "094893 04555",
+        "ESTABLISHMENT": "2020",
+        "RATINGS": 4.4,
+        "CAPACITY": "5000-25000"
+      },
+      "geometry": {
+        "coordinates": [11.641783,78.202943]
+      }
+    }, {
+      "properties": {
+        "ID": 3,
+        "NAME": "Kallanatham Cricket Stadium",
+        "DESCRIPTION": "",
+        "ADDRESS": "Kallanatham, Tamil Nadu - 636141",
+        "MOBILE_NO": "N/A",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 4.0,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [11.605561,78.626021]
+      }
+    },{
+      "properties": {
+        "ID": 4,
+        "NAME": "PSG IMSR Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": "2/1, Peelamedu, Coimbatore, Tamil Nadu - 641004",
+        "MOBILE_NO": "",
+        "ESTABLISHMENT":"1990",
+        "RATINGS": 4.4,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [11.020332,77.009064]
+      }
+    },{
+      "properties": {
+        "ID": 5,
+        "NAME": "Chemplast Cricket Ground",
+        "DESCRIPTION": "Chemplast Cricket Ground or Indian Institute of Technology Chemplast Ground is a cricket ground in the IIT Madras campus. The ground is an important cricket venue and is described by cricketer Sachin Tendulkar as the most scenic in the country. It is set amongst greenery",
+        "ADDRESS": "Indian Institute Of Technology, Chennai, Tamil Nadu - 600036",
+        "MOBILE_NO": "04422578526",
+        "ESTABLISHMENT": 1998,
+        "RATINGS": 4.6,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [12.988647,80.226523]
+      }
+    },{
+      "properties": {
+        "ID": 6,
+        "NAME": "NPR College Cricket Ground",
+        "DESCRIPTION": "An artificial turf ground with a seating capacity of 5000 and flood lights. The ground has hosted 10 first class cricket matches and it is also a venue for Tamil Nadu Premier League tournament. ",
+        "ADDRESS": "dindigul natham road, Pappanamalai R.F, Natham, Tamil Nadu - 624401",
+        "MOBILE_NO": "04544246500",
+        "ESTABLISHMENT": 1972,
+        "RATINGS": 4.4,
+        "CAPACITY": "5000"
+      },
+      "geometry": {
+        "coordinates": [10.241201,78.186722]
+      }
+    },{
+      "properties": {
+        "ID": 7,
+        "NAME": "SNR College Cricket Stadium ",
+        "DESCRIPTION": "Coimbatore's First Turf wicket Cricket ground inaugurated at SNR Grounds",
+        "ADDRESS": "Peelamedu, Coimbatore, Tamil Nadu - 641006",
+        "MOBILE_NO": "-",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 4.3,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [11.022606,76.985471]
+      }
+    },{
+      "properties": {
+        "ID": 8,
+        "NAME": "Warriors Cricket Ground,Coimbatore",
+        "DESCRIPTION": "",
+        "ADDRESS": "New Thillai Nagar, P N Pudur, Tamil Nadu - 641025",
+        "MOBILE_NO": "-",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 4.6,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [11.029055,76.920155]
+      }
+    },{
+      "properties": {
+        "ID": 9,
+        "NAME": "Pavin International Cricket Stadium",
+        "DESCRIPTION": "",
+        "ADDRESS": "Vellakinar Village, Coimbatore, Tamil Nadu - 641022",
+        "MOBILE_NO": "-",
+        "ESTABLISHMENT":"N/A" ,
+        "RATINGS": 3.8,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [11.086941,76.955164]
+      }
+    },{
+      "properties": {
+        "ID": 10,
+        "NAME": "Mandram Palayam Eden Garden Cricket Stadium",
+        "DESCRIPTION": "",
+        "ADDRESS": "Coimbatore, Tamil Nadu - 641202",
+        "MOBILE_NO": "098433 25112",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 4.1,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [10.818567,77.098631]
+      }
+    },{
+      "properties": {
+        "ID": 11,
+        "NAME": "Sulochana Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": "Tripur Palladam Main Rd Annamalai's Toyota Showroom Opposite, Naranapuram, Tamil Nadu",
+        "MOBILE_NO": "-",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 4.8,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [11.026587,77.305003]
+      }
+    },{
+      "properties": {
+        "ID": 12,
+        "NAME": "Kannarapettai M.Prakash Memorial Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": "Kannarappettai, Tamil Nadu 614020",
+        "MOBILE_NO": "-",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 4.6,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [10.600219,79.444858]
+      }
+    },{
+      "properties": {
+        "ID": 13,
+        "NAME": "Sri Shakthi Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": "Sri Shakthi University, Chinniyampalayam, Coimbatore, Tamil Nadu - 641062",
+        "MOBILE_NO": "0422 236 9900",
+        "ESTABLISHMENT": "2006",
+        "RATINGS": 4.2,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [11.038823,77.075268]
+      }
+    },{
+      "properties": {
+        "ID": 14,
+        "NAME": "MMC Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": " Muthuswamy Rd, Park Town, Chennai, Tamil Nadu - 600003",
+        "MOBILE_NO": "-",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 4.4,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [13.081730,80.280246]
+      }
+    },{
+      "properties": {
+        "ID": 15,
+        "NAME": "Roshan Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": "Leelavathi Nagar, Tharapakkam, Chennai, Tamil Nadu - 600116",
+        "MOBILE_NO": "-",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 3.8,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [12.999180,80.141935]
+      }
+    },{
+      "properties": {
+        "ID": 16,
+        "NAME": "Sri Cricket Ground and Academy",
+        "DESCRIPTION": "Sri Cricket Ground And Academy in Mambakkam, Chennai is one of the top Sports Ground in Mambakkam, Chennai.",
+        "ADDRESS": "Jothi Nagar, Mambakkam, Tamil Nadu - 600127",
+        "MOBILE_NO": "098406 18622",
+        "ESTABLISHMENT":"N/A" ,
+        "RATINGS": 4.0,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [12.832546,80.168312]
+      }
+    },{
+      "properties": {
+        "PARK_ID": 17,
+        "NAME": "Jawaharlal Nehru Stadium",
+        "DESCRIPTION": "Jawaharlal Nehru Stadium is a multipurpose stadium in Chennai, India. It has a capacity to seat 40,000 people. It hosts football matches and athletic competitions. The complex also houses a multipurpose indoor stadium with a seating capacity of 5,000 which hosts volleyball, basketball, table tennis games.",
+        "ADDRESS": "Raja Muthiah Rd, Kannappar Thidal, Periyamet, Chennai, Tamil Nadu - 600003",
+        "MOBILE_NO": "044 2536 8709",
+        "ESTABLISHMENT": 1993,
+        "RATINGS": 4.2,
+        "CAPACITY": "40000"
+      },
+      "geometry": {
+        "coordinates": [13.085773,80.271670]
+      }
+    },{
+      "properties": {
+        "ID": 18,
+        "NAME": "M.A.Chidambaram Stadium",
+        "DESCRIPTION": "M. A. Chidambaram Stadium is a cricket stadium in Chennai, Tamil Nadu, India. It was established in 1916 and it is the second oldest cricket stadium in the country after Eden Gardens in Kolkata.",
+        "ADDRESS": "Victoria Hostel Rd, Chepauk, Triplicane, Chennai, Tamil Nadu - 600005",
+        "MOBILE_NO": "044 2854 4175",
+        "ESTABLISHMENT": 1916,
+        "RATINGS": 4.5,
+        "CAPACITY": "54000"
+      },
+      "geometry": {
+        "coordinates": [13.063096,80.279280]
+      }
+    },{
+      "properties": {
+        "ID": 19,
+        "NAME": "Pallavaram Military Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": "Meenambakkam, Chennai, Tamil Nadu - 600043",
+        "MOBILE_NO": "099628 00231",
+        "ESTABLISHMENT":"N/A" ,
+        "RATINGS": 4.2,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [12.978114,80.153015]
+      }
+    },{
+      "properties": {
+        "ID": 20,
+        "NAME": "Sathyabama University Cricket Ground",
+        "DESCRIPTION": "",
+        "ADDRESS": "Sathyabama University Campus, Kamaraj Nagar, Kanchipuram, Chennai, Tamil Nadu - 600119",
+        "MOBILE_NO": "044 2450 3150",
+        "ESTABLISHMENT": "N/A",
+        "RATINGS": 3.7,
+        "CAPACITY": "N/A"
+      },
+      "geometry": {
+        "coordinates": [12.872809,80.216613]
+      }
+    }]
+  }
