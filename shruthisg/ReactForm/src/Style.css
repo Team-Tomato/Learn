@@ -1,0 +1,23 @@
+body{
+    background-color: violet;
+  }
+  h1{
+    font-size: 38px;
+  }
+  
+
+    
+   
+    
+
+  @media screen and (max-width:900px){
+  
+      .main-contianer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly; 
+        
+      }
+    
+    }
