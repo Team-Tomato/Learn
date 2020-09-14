@@ -1,0 +1,89 @@
+
+.landing-grid {
+
+  text-align: center;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projects-grid {
+  display: flex;
+}
+
+/* Resume Page css */
+.resume-right-col {
+  background: #27221F;
+  color: white;
+  padding: 2em;
+}
+
+
+
+/* contact page css */
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+}
+
+.bannertext {
+  
+  opacity: .8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.bannertext h1 {
+  font-size: 66px;
+  font-weight: bold;
+ 
+  margin-bottom:0 ;
+}
+
+.bannertext p {
+ 
+  font-size: 20px;
+  padding: 30px;
+  margin-bottom: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  
+}
+
+.social-links i {
+  color: #000;
+  font-size: 5em;
+  padding: 8px;
+}
+
+img{
+  border-radius: 50%;
+}
+
+.contact-details{
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+.contact-details p{
+  margin-bottom: 0%;
+}
+
+#portfolio-wrapper{
+  text-align: center;
+}
+
+.two h1{
+  padding:50px;
+}
