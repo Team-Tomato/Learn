@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch api using javascript</title>
+</head>
+<body>
+   <table style="background-color:#f2f2f2;text-align:left;color:black;" border="2">
+      <thead style="background-color:#ff4ca3;color:white;">
+        <th>ID</th>
+        <th>Shortform</th>
+        <th>Staff</th>
+        <th>Subjct Name</th>
+        <th>URL</th>
+        <th>Year</th>
+      </thead>
+      <tbody id= "data"></tbody>
+   </table>
+<script>
+ const url=" https://teamtomato.herokuapp.com/api/v1/question";
+ async function getData(){
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data);
+  if(data.length > 0){
+    var temp="";
+    data.forEach((d)=>{
+      temp+="<tr>";
+      temp+="<td>"+d.id+"</td>";
+      temp+="<td>"+d.shortForm+"</td>";
+      temp+="<td>"+d.staff+"</td>";
+      temp+="<td>"+d.subjectName+"</td>";
+      temp+="<td>"+d.url+"</td>";
+      temp+="<td>"+d.year+"</td></tr>";
+    })
+    document.getElementById("data").innerHTML= temp;
+  }
+}
+getData();
+</script>
+</body>
+</html>

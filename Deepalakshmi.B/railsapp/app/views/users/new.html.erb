@@ -1,0 +1,32 @@
+<h1>WELCOME</h1>
+<h3>Enter Your Information!</h3>
+
+<hr>
+
+<%= form_for @user do |f| %>
+  <% if @user.errors.any? %>
+  <h2>Errors:</h2>
+     <ul>
+	<% @user.errors.full_messages.each do |message| %>
+	<li> <%= message %></li>
+	<% end %> 
+     </ul>
+  <%end%>
+
+  
+  <%= f.label :Name%><br>
+  <%= f.text_field :name%><br>
+  <%= f.label :PhoneNo%><br>
+  <%= f.text_field :phone%><br>
+  <%= f.label :Email%><br>
+  <%= f.text_field :email%><br>
+  <%= f.label :City%><br>
+  <%= f.text_field :city%><br>
+  <%= f.label :State%><br>
+  <%= f.text_field :state%><br>
+  <%= f.label :Pin_Code%><br>
+  <%= f.text_field :pin%><br>
+  <dir>
+  <%= f.submit %>
+  </dir>
+<%end%>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Papers</title>
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        th{
+            text-align: center;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h2>Question Paper Details</h2>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Id</th>
+                    <th>Staff Name</th>
+                    <th>Subject Name</th>
+                    <th>ShortForm</th>
+                    <th>Link</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+                
+            </tbody>
+        </table>
+    </div>
+</body>
+<script>
+  fetch(' https://teamtomato.herokuapp.com/api/v1/question')
+  .then(response => response.json())
+  .then(data => {
+      console.log(data)
+      var temp="";
+      data.forEach((details,index) => {
+          temp+="<tr><td>"+(index+1) +"</td>"
+            temp+="<td>"+ details.id+"</td>"
+          temp+="<td>"+details.staff +"</td>"
+          temp+="<td>"+details.subjectName +"</td>"
+          temp+="<td>"+details.shortForm+"</td>"
+          temp+="<td>"+details.url+"</td>";
+          temp+="<td>"+details.year+"</td></tr>" 
+      });
+    document.getElementById('data').innerHTML=temp
+  });
+
+</script>
+</html>
