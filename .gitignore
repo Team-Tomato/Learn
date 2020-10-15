@@ -1,2 +1,6 @@
 .DS_Store/
 _pycache__/
+.vscode
+
+node_modules/
+shruthi/Map/node_modules/yargs/yargs.js
